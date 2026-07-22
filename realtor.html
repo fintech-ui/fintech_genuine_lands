@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinTech Genuine Lands And Properties | Your Trusted Partner in Property Investment Nationwide</title>
+<meta name="description" content="FinTech Genuine Land And Properties — verified lands, houses, estates and commercial property listings across all 36 states of Nigeria. Documentation support, investment advisory and secure transactions.">
+<meta property="og:title" content="FinTech Genuine Land And  Properties">
+<meta property="og:description" content="Your Trusted Partner in Property Investment Nationwide">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="realtor.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader">
+  <div class="container nav-row">
+    <div class="logo">
+      <div class="mark">FG</div>
+      <div class="name">FinTech Genuine<span>Land And Properties · Nigeria</span></div>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <button data-page="home" class="active">Home</button>
+      <button data-page="properties">Properties</button>
+      <button data-page="about">About</button>
+      <button data-page="services">Services</button>
+      <button data-page="blog">Blog</button>
+      <button data-page="contact">Contact</button>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="darkToggle" title="Toggle dark mode">&#9789;</button>
+      <button class="icon-btn" id="favIconBtn" title="Saved properties">&#9825;</button>
+      <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="top">
+    <div class="logo"><div class="mark">FG</div><div class="name">FinTech Genuine<span>Properties</span></div></div>
+    <button class="close" id="mobileClose">&times;</button>
+  </div>
+  <nav>
+    <button data-page="home">Home</button>
+    <button data-page="properties">Properties</button>
+    <button data-page="about">About</button>
+    <button data-page="services">Services</button>
+    <button data-page="blog">Blog</button>
+    <button data-page="contact">Contact</button>
+  </nav>
+</div>
+
+<div class="toast" id="toast"><span class="dot"></span><span id="toastMsg"></span></div>
+
+<!-- ================= HOME PAGE ================= -->
+<main class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="eyebrow">Nationwide Coverage · All 36 States</div>
+      <h1>Find Your Dream <em>Property</em> Anywhere in Nigeria</h1>
+      <p class="lead">Verified lands, houses, estates and commercial properties — backed by full documentation support and a trusted agent network, from Owerri to every corner of the country.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-gold" data-page="properties">View Properties</button>
+        <button class="btn btn-outline" data-page="contact">Contact Us</button>
+        <a class="btn btn-whatsapp" href="https://wa.me/2348156536417?text=Hello%20FinTech%20Genuine%20Properties%2C%20I%27d%20like%20to%20enquire%20about%20a%20property." target="_blank" rel="noopener">WhatsApp Inquiry</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>1,240+</b><span>Properties Sold</span></div>
+        <div class="stat"><b>3,600+</b><span>Happy Clients</span></div>
+        <div class="stat"><b>36</b><span>States Covered</span></div>
+        <div class="stat"><b>12</b><span>Years of Experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Browse By Category</div>
+        <h2>Every kind of property, everywhere you're building your future</h2>
+        <p>From city-centre apartments to farmland acres, find the category that matches your investment goal.</p>
+      </div>
+      <div class="cat-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-head" style="display:flex; justify-content:space-between; align-items:flex-end; max-width:none;">
+        <div>
+          <div class="eyebrow">Handpicked</div>
+          <h2 style="max-width:520px;">Featured Properties</h2>
+        </div>
+        <button class="btn btn-outline-navy" data-page="properties">View All Listings</button>
+      </div>
+      <div class="grid-3" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats-strip">
+        <div class="stat"><b>1,240+</b><span>Properties Sold</span></div>
+        <div class="stat"><b>3,600+</b><span>Happy Clients</span></div>
+        <div class="stat"><b>36</b><span>States Covered</span></div>
+        <div class="stat"><b>12</b><span>Years of Experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-head" style="margin:0 auto 48px; text-align:center;">
+        <div class="eyebrow" style="justify-content:center;"><span></span>Client Stories</div>
+        <h2>Trusted by families and investors nationwide</h2>
+      </div>
+      <div class="testi-wrap" id="testiWrap"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head" style="max-width:none; display:flex; justify-content:space-between; align-items:flex-end;">
+        <div><div class="eyebrow">Just Listed</div><h2 style="max-width:520px;">Latest Property Listings</h2></div>
+        <button class="btn btn-outline-navy" data-page="properties">See All</button>
+      </div>
+      <div class="grid-3" id="latestGrid"></div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-light">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;"><span></span>Partners & Affiliations</p>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:30px; opacity:.6; font-family:'Fraunces',serif; font-size:19px; margin-top:20px;">
+        <span>Nigerian Institution of Estate Surveyors</span>
+        <span>Real Estate Developers Association</span>
+        <span>Imo State Ministry of Lands</span>
+        <span>CBN Mortgage Partners</span>
+        <span>NIESV Registered</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= PROPERTIES PAGE ================= -->
+<main class="page" id="page-properties">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Full Portfolio</div>
+        <h2>Property Listings</h2>
+        <p>Filter by state, price, type and more to find the property that fits your plan.</p>
+      </div>
+
+      <div class="filter-bar">
+        <select id="fState"><option value="">All States</option></select>
+        <select id="fType">
+          <option value="">All Types</option>
+          <option>Duplex</option><option>Apartment</option><option>Land</option>
+          <option>Commercial Land</option><option>Mansion</option><option>Estate Land</option><option>Farmland</option>
+        </select>
+        <select id="fBeds">
+          <option value="">Any Bedrooms</option>
+          <option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option><option value="5">5+</option>
+        </select>
+        <select id="fStatus"><option value="">Any Status</option><option>For Sale</option><option>New</option><option>Sold</option></select>
+        <input type="text" id="fPrice" placeholder="Max price, e.g. 100000000">
+        <button class="btn btn-gold filter-btn" id="applyFilters">Apply Filters</button>
+      </div>
+
+      <div class="results-bar">
+        <span id="resultsCount" style="color:var(--gray-mid); font-size:14px;"></span>
+        <select id="sortSelect">
+          <option value="new">Sort: Newest</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div class="grid-3" id="allPropertiesGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= PROPERTY DETAIL PAGE ================= -->
+<main class="page" id="page-detail">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="breadcrumb"><a data-page="home">Home</a> / <a data-page="properties">Properties</a> / <span id="detailBreadcrumb"></span></div>
+      <div class="detail-gallery" id="detailGallery"></div>
+
+      <div class="detail-layout">
+        <div>
+          <div id="detailBadges" style="display:flex; gap:10px; margin-bottom:14px;"></div>
+          <h2 id="detailTitle" style="font-size:30px; margin-bottom:8px;"></h2>
+          <p id="detailLoc" style="color:var(--gray-mid); margin-bottom:14px;"></p>
+          <div id="detailPrice" style="font-family:'Fraunces',serif; font-size:32px; color:var(--navy);"></div>
+
+          <div class="spec-grid" id="detailSpecs"></div>
+
+          <h3 style="font-size:19px; margin-bottom:12px;">Overview</h3>
+          <p id="detailDesc" style="color:var(--gray-mid); margin-bottom:8px;"></p>
+
+          <h3 style="font-size:19px; margin:28px 0 4px;">Features & Amenities</h3>
+          <div class="feat-tags" id="detailFeatures"></div>
+
+          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--gray-mid); padding:16px 0; border-top:1px solid var(--line);">
+            <span id="detailId"></span><span id="detailDate"></span>
+          </div>
+
+          <h3 style="font-size:19px; margin:34px 0 16px;">Location</h3>
+          <div class="map-frame"><iframe src="https://www.google.com/maps?q=Nigeria&output=embed" width="100%" height="100%" style="border:0;" loading="lazy"></iframe></div>
+
+          <h3 style="font-size:19px; margin:34px 0 16px;">Similar Properties</h3>
+          <div class="grid-3" id="similarGrid"></div>
+        </div>
+
+        <div>
+          <div class="agent-card">
+            <img id="agentPhoto" src="" alt="Agent">
+            <h4 id="agentName" style="font-size:16px;"></h4>
+            <span style="font-size:12.5px; color:var(--gold); text-transform:uppercase;">Verified Agent</span>
+            <p id="agentPhone" style="font-size:13.5px; color:var(--gray-mid); margin:12px 0;"></p>
+            <a class="btn btn-whatsapp btn-block" id="agentWhatsapp" href="#" target="_blank" rel="noopener" style="margin-bottom:10px;">WhatsApp Inquiry</a>
+            <button class="btn btn-outline-navy btn-block" id="openInquiryBtn">Send Inquiry</button>
+            <button class="btn btn-outline-navy btn-block" id="openInspectionBtn" style="margin-top:10px;">Schedule Inspection</button>
+            <button class="btn btn-sm" id="compareAddBtn" style="margin-top:14px; width:100%; border:1px solid var(--line); border-radius:2px;">+ Add to Compare</button>
+          </div>
+
+          <div class="mortgage-box">
+            <h4 style="font-size:15px; margin-bottom:14px;">Mortgage Calculator</h4>
+            <div class="field"><label>Down Payment (%)</label><input type="number" id="mDown" value="20"></div>
+            <div class="field"><label>Interest Rate (% p.a.)</label><input type="number" id="mRate" value="18"></div>
+            <div class="field"><label>Loan Term (years)</label><input type="number" id="mTerm" value="15"></div>
+            <button class="btn btn-gold btn-block btn-sm" id="mCalcBtn">Calculate</button>
+            <div class="result"><span style="font-size:11.5px; text-transform:uppercase; color:var(--gray-mid);">Estimated Monthly Payment</span><b id="mResult">₦0</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= ABOUT PAGE ================= -->
+<main class="page" id="page-about">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="split">
+        <div>
+          <div class="eyebrow">Our Story</div>
+          <h2 style="font-size:34px; margin-bottom:18px;">Built in Owerri. Trusted across Nigeria.</h2>
+          <p style="color:var(--gray-mid); margin-bottom:16px;">FinTech Genuine Properties began as a small documentation and land-verification desk in Owerri, Imo State, formed in response to how often buyers were losing money to unverified land and forged titles. Twelve years on, that same commitment to verified paperwork now backs a nationwide portfolio spanning residential, commercial and investment property in all 36 states.</p>
+          <p style="color:var(--gray-mid);">Every listing on this platform passes through our internal verification process before it ever reaches a client — because in Nigerian real estate, trust is the only currency that matters.</p>
+        </div>
+        <img src="https://picsum.photos/seed/owerrioffice/800/900" alt="FinTech Genuine Properties office">
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+      <div>
+        <div class="eyebrow">Mission</div>
+        <h3 style="font-size:22px; margin-bottom:12px;">To make verified, well-documented property ownership accessible to every Nigerian, wherever they live.</h3>
+      </div>
+      <div>
+        <div class="eyebrow">Vision</div>
+        <h3 style="font-size:22px; margin-bottom:12px;">To be Nigeria's most trusted name in property investment — one verified transaction at a time.</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">Why Choose Us</div><h2>The FinTech Genuine difference</h2></div>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">Our People</div><h2>Meet the Team</h2></div>
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= SERVICES PAGE ================= -->
+<main class="page" id="page-services">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">What We Do</div>
+        <h2>Full-service property support, start to finish</h2>
+        <p>From first search to final documentation, our team manages every stage of your property journey.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <section class="section bg-navy">
+    <div class="container" style="text-align:center;">
+      <div class="eyebrow" style="justify-content:center;"><span></span>Selling?</div>
+      <h2 style="font-size:30px; margin-bottom:14px;">List your property with FinTech Genuine</h2>
+      <p style="color:#B7C1D6; max-width:520px; margin:0 auto 26px;">Reach verified buyers and investors across the country. Our agents handle valuation, marketing and paperwork.</p>
+      <button class="btn btn-gold" id="openSellBtn">Sell Your Property</button>
+    </div>
+  </section>
+</main>
+
+<!-- ================= BLOG PAGE ================= -->
+<main class="page" id="page-blog">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Insights</div>
+        <h2>The Property Journal</h2>
+        <p>Guides and market intelligence for buyers, sellers and investors in Nigeria.</p>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= CONTACT PAGE ================= -->
+<main class="page" id="page-contact">
+  <section class="section" style="padding-top:150px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Contact FinTech Genuine Properties</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-card">
+            <div class="ic">&#128205;</div>
+            <div><b>Office Address</b><p style="color:var(--gray-mid); font-size:14px; margin-top:4px;">Owerri, Imo State, Nigeria</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ic">&#9993;</div>
+            <div><b>Email</b><p style="color:var(--gray-mid); font-size:14px; margin-top:4px;">favouroscar0@gmail.com</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ic">&#128222;</div>
+            <div><b>Phone / WhatsApp</b><p style="color:var(--gray-mid); font-size:14px; margin-top:4px;">+234 815 653 6417</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ic">&#128337;</div>
+            <div><b>Business Hours</b><p style="color:var(--gray-mid); font-size:14px; margin-top:4px;">Mon – Fri: 8am – 6pm · Sat: 9am – 3pm</p></div>
+          </div>
+          <div class="map-frame"><iframe src="https://www.google.com/maps?q=Owerri,Imo+State,Nigeria&output=embed" width="100%" height="100%" style="border:0;" loading="lazy"></iframe></div>
+          <div class="social-row" style="margin-top:20px;">
+            <a href="#">FB</a><a href="#">IG</a><a href="#">X</a><a href="#">IN</a>
+          </div>
+        </div>
+        <div class="form-card">
+          <h3 style="font-size:19px; margin-bottom:20px;">Send a General Inquiry</h3>
+          <form id="generalForm">
+            <div class="form-grid">
+              <div class="field"><label>Full Name</label><input required type="text"></div>
+              <div class="field"><label>Email Address</label><input required type="email"></div>
+              <div class="field"><label>Phone Number</label><input required type="tel"></div>
+              <div class="field"><label>WhatsApp Number</label><input type="tel"></div>
+              <div class="field"><label>Location</label><input type="text"></div>
+              <div class="field"><label>Subject</label><input type="text"></div>
+              <div class="field full"><label>Message</label><textarea required></textarea></div>
+            </div>
+            <button class="btn btn-gold btn-block" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:80px;"><div class="eyebrow">FAQ</div><h2>Frequently Asked Questions</h2></div>
+      <div id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= MODALS ================= -->
+<div id="modalOverlay" style="position:fixed; inset:0; background:rgba(5,21,48,.6); z-index:1500; display:none; align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#fff; max-width:560px; width:100%; max-height:88vh; overflow-y:auto; border-radius:4px; padding:34px; position:relative;" id="modalBody">
+  </div>
+</div>
+
+<!-- Compare tray -->
+<div class="compare-tray" id="compareTray">
+  <div class="container row">
+    <div class="compare-chips" id="compareChips"></div>
+    <div style="display:flex; gap:10px;">
+      <button class="btn btn-sm btn-gold" id="viewCompareBtn">Compare</button>
+      <button class="btn btn-sm btn-outline" id="clearCompareBtn">Clear</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px;"><div class="mark">FG</div><div class="name" style="color:#fff;">FinTech Genuine<span>Properties</span></div></div>
+        <p style="font-size:13.5px; max-width:280px; margin-bottom:18px;">Your trusted partner in property investment nationwide — verified lands, houses, estates and commercial properties across all 36 states.</p>
+        <div class="social-row"><a href="#">FB</a><a href="#">IG</a><a href="#">X</a><a href="#">IN</a></div>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a data-page="about">About Us</a></li>
+          <li><a data-page="services">Services</a></li>
+          <li><a data-page="blog">Blog</a></li>
+          <li><a data-page="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Properties</h5>
+        <ul>
+          <li><a data-page="properties">All Listings</a></li>
+          <li><a data-page="properties">Land & Estates</a></li>
+          <li><a data-page="properties">Commercial</a></li>
+          <li><a data-page="properties">New Listings</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p style="font-size:13.5px;">Get new listings and market updates in your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FinTech Genuine Properties. All rights reserved.</span>
+      <span>Owerri, Imo State, Nigeria · +234 815 753 6417</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/2348156536417?text=Hello%20FinTech%20Genuine%20Properties" target="_blank" rel="noopener" title="Chat on WhatsApp">&#9743;</a>
+<button class="back-top" id="backTop" title="Back to top">&#8593;</button>
+<div class="chat-bubble" id="chatBubble">Hi 👋 Need help finding a property? Tap the WhatsApp button to chat with an agent now.</div>
+
+<script src="realtor.js"></script>
+</body>
+</html>
